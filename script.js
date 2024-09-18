@@ -49,18 +49,22 @@ let range = prompt('Enter two positive numbers less than 1000: \n(like 22 187)')
 let rangeAray = range.split(' ')
 let firstNumber = Number(rangeAray[0])
 let secondNumber = Number(rangeAray[1])
-let N = firstNumber + 1
-
-for (let index = firstNumber; N != secondNumber; N++) {
-  sum = index + N
-}
-
-let final = sum + secondNumber
-console.log(final)
 
 
+// for (let index = firstNumber; N < secondNumber; N++) {
+//   sum = index + N
+// }
 
+// let final = sum + secondNumber + firstNumber + 1
+// alert(final)
 
+// for (let index = firstNumber; index++;) {
+//   sum = index + index++ 
+//   if (index++ > secondNumber)
+//     break
+// }
+
+// alert(sum)
 
 
 
