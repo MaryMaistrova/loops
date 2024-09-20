@@ -72,17 +72,26 @@
 // Запитай у користувача 2 числа і знайди найбільший спільний дільник.
 
 
-// let twoNumbers = prompt('Enter two positive integers : \n(like 27 150)')
+let twoNumbers = prompt('Enter two positive integers : \n(like 27 150)')
 
 let twoNumbersArray = twoNumbers.split(' ')
-let firstinteger = Number(twoNumbersArray[0])
-let secondinteger = Number(twoNumbersArray[1])
+let firstInteger = Number(twoNumbersArray[0])
+let secondInteger = Number(twoNumbersArray[1])
 
+let probableDivisorsArray = []
 
+for (let i = 1; i < firstInteger && i < secondInteger; i++) {
+  probableDivisorsArray.push(i);
+}
 
+let actualDivisorsArray = []
 
-
-
+for (let x = 0; x < probableDivisorsArray.length; x++) {
+  if((firstInteger % probableDivisorsArray[x]) === 0 && (secondInteger % probableDivisorsArray[x]) === 0) {
+    actualDivisorsArray.push(x)
+  } else {continue}
+}
+alert(actualDivisorsArray)
 
 
 
