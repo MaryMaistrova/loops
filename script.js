@@ -45,53 +45,57 @@
 
 // Підрахуй суму всіх чисел в заданому користувачем діапазоні.
 
-let range = prompt('Enter two positive numbers less than 1000: \n(like 22 187)')
+// let range = prompt('Enter two positive numbers less than 1000: \n(like 22 187)')
 
-let rangeArray = range.split(' ')
-let firstNumber = Number(rangeArray[0])
-let secondNumber = Number(rangeArray[1])
+// let rangeArray = range.split(' ')
+// let firstNumber = Number(rangeArray[0])
+// let secondNumber = Number(rangeArray[1])
 
-let arr = []
+// let arr = []
 
-if (firstNumber === secondNumber) {
-  alert(firstNumber)
-} else if (firstNumber < secondNumber) {
-  for (let index = firstNumber; index <= secondNumber; index++) {
-    arr.push(index);
-  }
-} else {
-  for (let index = secondNumber; index <= firstNumber; index++) {
-    arr.push(index);
-  }
-}
+// if (firstNumber === secondNumber) {
+//   alert(firstNumber)
+// } else if (firstNumber < secondNumber) {
+//   for (let index = firstNumber; index <= secondNumber; index++) {
+//     arr.push(index);
+//   }
+// } else {
+//   for (let index = secondNumber; index <= firstNumber; index++) {
+//     arr.push(index);
+//   }
+// }
 
-const currentSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue)
+// const currentSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue)
 
-alert(currentSum)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// alert(currentSum)
 
 // Запитай у користувача 2 числа і знайди найбільший спільний дільник.
+
+
+// let twoNumbers = prompt('Enter two positive integers : \n(like 27 150)')
+
+let twoNumbersArray = twoNumbers.split(' ')
+let firstinteger = Number(twoNumbersArray[0])
+let secondinteger = Number(twoNumbersArray[1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Запитай у користувача число і виведи всі дільники цього числа.
 // Норма
 
