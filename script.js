@@ -46,30 +46,28 @@
 // Підрахуй суму всіх чисел в заданому користувачем діапазоні.
 
 let range = prompt('Enter two positive numbers less than 1000: \n(like 22 187)')
-let rangeAray = range.split(' ')
-let firstNumber = Number(rangeAray[0])
-let secondNumber = Number(rangeAray[1])
 
+let rangeArray = range.split(' ')
+let firstNumber = Number(rangeArray[0])
+let secondNumber = Number(rangeArray[1])
 
-// for (let index = firstNumber; N < secondNumber; N++) {
-//   sum = index + N
-// }
+let arr = []
 
-// let final = sum + secondNumber + firstNumber + 1
-// alert(final)
+if (firstNumber === secondNumber) {
+  alert(firstNumber)
+} else if (firstNumber < secondNumber) {
+  for (let index = firstNumber; index <= secondNumber; index++) {
+    arr.push(index);
+  }
+} else {
+  for (let index = secondNumber; index <= firstNumber; index++) {
+    arr.push(index);
+  }
+}
 
-// for (let index = firstNumber; index++;) {
-//   sum = index + index++ 
-//   if (index++ > secondNumber)
-//     break
-// }
+const currentSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue)
 
-// alert(sum)
-
-
-
-
-
+alert(currentSum)
 
 
 
