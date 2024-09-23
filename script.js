@@ -72,33 +72,34 @@
 // Запитай у користувача 2 числа і знайди найбільший спільний дільник.
 
 
-let twoNumbers = prompt('Enter two positive integers : \n(like 27 150)')
+// let twoNumbers = prompt('Enter two positive integers : \n(like 27 150)')
 
-let twoNumbersArray = twoNumbers.split(' ')
-let firstInteger = Number(twoNumbersArray[0])
-let secondInteger = Number(twoNumbersArray[1])
+// let twoNumbersArray = twoNumbers.split(' ')
+// let firstInteger = Number(twoNumbersArray[0])
+// let secondInteger = Number(twoNumbersArray[1])
 
-let probableDivisorsArray = []
+// let probableDivisorsArray = []
 
-for (let i = 1; i < firstInteger && i < secondInteger; i++) {
-  probableDivisorsArray.push(i);
-}
+// for (let i = 1; i <= firstInteger && i <= secondInteger; i++) {
+//   probableDivisorsArray.push(i);
+// }
 
-let actualDivisorsArray = []
+// let actualDivisorsArray = []
 
-for (let x = 0; x < probableDivisorsArray.length; x++) {
-  if((firstInteger % probableDivisorsArray[x]) === 0 && (secondInteger % probableDivisorsArray[x]) === 0) {
-    actualDivisorsArray.push(x)
-  } else {continue}
-}
-alert(actualDivisorsArray)
+// for (let i = 0; i < probableDivisorsArray.length; i++) {
+//   if ((firstInteger % probableDivisorsArray[i]) === 0 && (secondInteger % probableDivisorsArray[i]) === 0) {
+//     actualDivisorsArray.push(probableDivisorsArray[i])
+//   }
+// }
 
+// let max = actualDivisorsArray[0]
 
-
-
-
-
-
+// for (let i = 1; i < actualDivisorsArray.length; i++) {
+//   if (actualDivisorsArray[i] > max) {
+//     max = actualDivisorsArray[i];
+//   }
+// }
+// alert(`The maximum common divisor of ${firstInteger} and ${secondInteger} is ${max}`)
 
 
 
@@ -106,6 +107,30 @@ alert(actualDivisorsArray)
 
 
 // Запитай у користувача число і виведи всі дільники цього числа.
+
+// let chosenNumber = Number(prompt('Enter a positive integer : '))
+
+// const divArray = []
+
+// for (let i = 1; i <= chosenNumber; i++) {
+//   if (chosenNumber % i === 0) {
+//     divArray.push(i)
+//   }
+// }
+// alert(`The divisors of ${chosenNumber} are: ${divArray}`)
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Норма
 
 // Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
