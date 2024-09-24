@@ -102,10 +102,6 @@
 // alert(`The maximum common divisor of ${firstInteger} and ${secondInteger} is ${max}`)
 
 
-
-
-
-
 // Запитай у користувача число і виведи всі дільники цього числа.
 
 // let chosenNumber = Number(prompt('Enter a positive integer : '))
@@ -121,24 +117,71 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 // Норма
 
 // Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
+
+// let aNumber = prompt('Enter a 5-digit number: ')
+// let firstCondition
+// let secondCondition
+
+// if(aNumber[0] === aNumber[4]) {
+//   firstCondition = true;
+// } 
+
+// if(aNumber[1] === aNumber[3]) {
+//   secondCondition = true;
+// } 
+
+// if(firstCondition && secondCondition === true) {
+//   alert(`${aNumber} is a palindrome`)
+// } else {alert(`${aNumber} is not a palindrome`)}
+
+
 // Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
 // від 200 до 300 - знижка буде 3%;
 // від 300 до 500 - 5%;
 // від 500 і вище - 7%.
+
+// let purchaseSum = Number(prompt('Enter your purchase sum: (like 56.75)'))
+
+// let discount = purchaseSum / 100 * 3
+// let oldPrice = (purchaseSum + discount).toFixed(2)
+
+// let ddiscount = purchaseSum / 100 * 5
+// let ooldPrice = (purchaseSum + ddiscount).toFixed(2)
+
+// let dddiscount = purchaseSum / 100 * 7
+// let oooldPrice = (purchaseSum + dddiscount).toFixed(2)
+
+// if (200 <= purchaseSum <= 299) {
+//   alert(`Your purchase sum without the discount is ${oldPrice}$`)
+// } else if (300 <= purchaseSum <= 499) {
+//   alert(`Your purchase sum without the discount is ${ooldPrice}$`)
+// } else if (500 <= purchaseSum) {
+//   alert(`Your purchase sum without the discount is ${oooldPrice}$`)
+// } else { alert('You do not have a discount') }
+
+
 // Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних. Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Зацикли відображення днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
 // Максимум
 
