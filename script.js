@@ -165,13 +165,24 @@
 
 // Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних. Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
 
+let aNumber
+let positive = 0
+let negative = 0
+let zero = 0
 
 
 
 
+for (let i = 0; i < 10; i++) {
+  aNumber = Number(prompt('Enter a number: '))
+  if (aNumber > 0) {
+    positive += 1
+  } else if (aNumber < 0) {
+    negative += 1
+  } else { zero += 1 }
+}
 
-
-
+alert(`You've entered ${positive} positive numbers, ${negative} negative numbers and ${zero} zeros!`)
 
 
 
