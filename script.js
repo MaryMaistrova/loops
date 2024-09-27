@@ -165,37 +165,42 @@
 
 // Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних. Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
 
-let aNumber
-let positive = 0
-let negative = 0
-let zero = 0
+// let aNumber
+// let positive = 0
+// let negative = 0
+// let zero = 0
+
+// let even = 0
+// let odd = 0
 
 
+// for (let i = 0; i < 10; i++) {
+//   aNumber = Number(prompt('Enter an integer: '))
+//   if (aNumber > 0) {
+//     positive += 1
+//   } else if (aNumber < 0) {
+//     negative += 1
+//   } else { zero += 1 }
 
+//   if (aNumber % 2 === 0) {
+//     even += 1
+//   } else {odd += 1}
+// }
 
-for (let i = 0; i < 10; i++) {
-  aNumber = Number(prompt('Enter a number: '))
-  if (aNumber > 0) {
-    positive += 1
-  } else if (aNumber < 0) {
-    negative += 1
-  } else { zero += 1 }
-}
-
-alert(`You've entered ${positive} positive numbers, ${negative} negative numbers and ${zero} zeros!`)
-
-
-
-
-
-
-
-
-
+// alert(`You've entered ${positive} positive numbers, ${negative} negative numbers and ${zero} zeros! Also you've entered ${even} even numbers and ${odd} odd numbers. (Zero is an odd number *_* )`)
 
 // Зацикли відображення днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
-// Максимум
 
-// Гра «Вгадай число». Запропонуй користувачеві загадати число від 0 до 100 і відгадай його наступним способом: кожну ітерацію циклу діли діапазон чисел навпіл, записуй результат в N і питай у користувача «Ваше число> N, <N або == N?». Залежно від того що вказав користувач, зменшуй діапазон. Початковий діапазон від 0 до 100, поділи навпіл і отримай 50. Якщо користувач вказав, що його число> 50, то зміни діапазон на від 50 до 100. І так до тих пір, поки користувач не вибере == N (буде корисним почитати про алгоритм: "бінарний пошук").
-// Виведи таблицю множення для всіх чисел від 2 до 9. Кожне число необхідно помножити на числа від 1 до 10.
-// Запитай дату (день, місяць, рік) і виведи наступну за нею дату. Враховуй можливість переходу на наступний місяць, рік, а також високосний рік.
+// const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+// let i = 0
+
+// while (!true) {
+//   const weekDay = weekDays[i++]
+//   if (i === 7) i = 0
+//   const shouldContinue = confirm(`${weekDay}! Wanna see next one?`)
+//   if (!shouldContinue) break
+// }
+
+// while (confirm(`${weekDays[i = (i + 1) % 7]}! Wanna see next one?`)); 
+
