@@ -2,118 +2,118 @@
 
 // Запитай у користувача його вік і визначи, ким він є: дитиною (0-11), підлітком (12-17), дорослим (18_59) або пенсіонером (60 ...), передбач можливість введення невірних даних.
 
-// while ((ageInput >= 0 && ageInput <= 99) === false) {
-//   var ageInput = prompt('Enter your age: (1-2 digit numbers only)')
-// }
+while ((ageInput >= 0 && ageInput <= 99) === false) {
+  var ageInput = prompt('Enter your age: (1-2 digit numbers only)')
+}
 
-// if (ageInput === null || ageInput === "") {
-//   alert('Too bad! You will never know!')
-// } else if (ageInput <= 11) {
-//   alert('You can\'t read this code yet!')
-// } else if (ageInput <= 17) {
-//   alert('You are in the rebelious stage!')
-// } else if (ageInput <= 59) {
-//   alert('You have to pay the bills!')
-// } else {
-//   alert('You are finally free but not happy about it!')
-// }
+if (ageInput === null || ageInput === "") {
+  alert('Too bad! You will never know!')
+} else if (ageInput <= 11) {
+  alert('You can\'t read this code yet!')
+} else if (ageInput <= 17) {
+  alert('You are in the rebelious stage!')
+} else if (ageInput <= 59) {
+  alert('You have to pay the bills!')
+} else {
+  alert('You are finally free but not happy about it!')
+}
 
 // Запитай у користувача число від 0 до 9 і виведи йому спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).
 
-// let digit = prompt('Enter one digit from 0 to 9 to see special symbol: ')
-// if (digit === 0) {
-//   alert(")")
-// } else if (digit === '1') {
-//   alert('!')
-// } else if (digit === '2') {
-//   alert('@')
-// } else if (digit === '3') {
-//   alert('#')
-// } else if (digit === '4') {
-//   alert('$')
-// } else if (digit === '5') {
-//   alert('%')
-// } else if (digit === '6') {
-//   alert('^')
-// } else if (digit === '7') {
-//   alert('&')
-// } else if (digit === '8') {
-//   alert('*')
-// } else if (digit === '9') {
-//   alert('(')
-// }
+let digit = prompt('Enter one digit from 0 to 9 to see special symbol: ')
+if (digit === 0) {
+  alert(")")
+} else if (digit === '1') {
+  alert('!')
+} else if (digit === '2') {
+  alert('@')
+} else if (digit === '3') {
+  alert('#')
+} else if (digit === '4') {
+  alert('$')
+} else if (digit === '5') {
+  alert('%')
+} else if (digit === '6') {
+  alert('^')
+} else if (digit === '7') {
+  alert('&')
+} else if (digit === '8') {
+  alert('*')
+} else if (digit === '9') {
+  alert('(')
+}
 
 // Підрахуй суму всіх чисел в заданому користувачем діапазоні.
 
-// let range = prompt('Enter two positive numbers less than 1000: \n(like 22 187)')
+let range = prompt('Enter two positive numbers less than 1000: \n(like 22 187)')
 
-// let rangeArray = range.split(' ')
-// let firstNumber = Number(rangeArray[0])
-// let secondNumber = Number(rangeArray[1])
+let rangeArray = range.split(' ')
+let firstNumber = Number(rangeArray[0])
+let secondNumber = Number(rangeArray[1])
 
-// let arr = []
+let arr = []
 
-// if (firstNumber === secondNumber) {
-//   alert(firstNumber)
-// } else if (firstNumber < secondNumber) {
-//   for (let index = firstNumber; index <= secondNumber; index++) {
-//     arr.push(index);
-//   }
-// } else {
-//   for (let index = secondNumber; index <= firstNumber; index++) {
-//     arr.push(index);
-//   }
-// }
+if (firstNumber === secondNumber) {
+  alert(firstNumber)
+} else if (firstNumber < secondNumber) {
+  for (let index = firstNumber; index <= secondNumber; index++) {
+    arr.push(index);
+  }
+} else {
+  for (let index = secondNumber; index <= firstNumber; index++) {
+    arr.push(index);
+  }
+}
 
-// const currentSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue)
+const currentSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue)
 
-// alert(currentSum)
+alert(currentSum)
 
 // Запитай у користувача 2 числа і знайди найбільший спільний дільник.
 
 
-// let twoNumbers = prompt('Enter two positive integers : \n(like 27 150)')
+let twoNumbers = prompt('Enter two positive integers : \n(like 27 150)')
 
-// let twoNumbersArray = twoNumbers.split(' ')
-// let firstInteger = Number(twoNumbersArray[0])
-// let secondInteger = Number(twoNumbersArray[1])
+let twoNumbersArray = twoNumbers.split(' ')
+let firstInteger = Number(twoNumbersArray[0])
+let secondInteger = Number(twoNumbersArray[1])
 
-// let probableDivisorsArray = []
+let probableDivisorsArray = []
 
-// for (let i = 1; i <= firstInteger && i <= secondInteger; i++) {
-//   probableDivisorsArray.push(i);
-// }
+for (let i = 1; i <= firstInteger && i <= secondInteger; i++) {
+  probableDivisorsArray.push(i);
+}
 
-// let actualDivisorsArray = []
+let actualDivisorsArray = []
 
-// for (let i = 0; i < probableDivisorsArray.length; i++) {
-//   if ((firstInteger % probableDivisorsArray[i]) === 0 && (secondInteger % probableDivisorsArray[i]) === 0) {
-//     actualDivisorsArray.push(probableDivisorsArray[i])
-//   }
-// }
+for (let i = 0; i < probableDivisorsArray.length; i++) {
+  if ((firstInteger % probableDivisorsArray[i]) === 0 && (secondInteger % probableDivisorsArray[i]) === 0) {
+    actualDivisorsArray.push(probableDivisorsArray[i])
+  }
+}
 
-// let max = actualDivisorsArray[0]
+let max = actualDivisorsArray[0]
 
-// for (let i = 1; i < actualDivisorsArray.length; i++) {
-//   if (actualDivisorsArray[i] > max) {
-//     max = actualDivisorsArray[i];
-//   }
-// }
-// alert(`The maximum common divisor of ${firstInteger} and ${secondInteger} is ${max}`)
+for (let i = 1; i < actualDivisorsArray.length; i++) {
+  if (actualDivisorsArray[i] > max) {
+    max = actualDivisorsArray[i];
+  }
+}
+alert(`The maximum common divisor of ${firstInteger} and ${secondInteger} is ${max}`)
 
 
 // Запитай у користувача число і виведи всі дільники цього числа.
 
-// let chosenNumber = Number(prompt('Enter a positive integer : '))
+let chosenNumber = Number(prompt('Enter a positive integer : '))
 
-// const divArray = []
+const divArray = []
 
-// for (let i = 1; i <= chosenNumber; i++) {
-//   if (chosenNumber % i === 0) {
-//     divArray.push(i)
-//   }
-// }
-// alert(`The divisors of ${chosenNumber} are: ${divArray}`)
+for (let i = 1; i <= chosenNumber; i++) {
+  if (chosenNumber % i === 0) {
+    divArray.push(i)
+  }
+}
+alert(`The divisors of ${chosenNumber} are: ${divArray}`)
 
 
 
@@ -121,21 +121,21 @@
 
 // Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
 
-// let aNumber = prompt('Enter a 5-digit number: ')
-// let firstCondition
-// let secondCondition
+let aNumber = prompt('Enter a 5-digit number: ')
+let firstCondition
+let secondCondition
 
-// if(aNumber[0] === aNumber[4]) {
-//   firstCondition = true;
-// } 
+if(aNumber[0] === aNumber[4]) {
+  firstCondition = true;
+} 
 
-// if(aNumber[1] === aNumber[3]) {
-//   secondCondition = true;
-// } 
+if(aNumber[1] === aNumber[3]) {
+  secondCondition = true;
+} 
 
-// if(firstCondition && secondCondition === true) {
-//   alert(`${aNumber} is a palindrome`)
-// } else {alert(`${aNumber} is not a palindrome`)}
+if(firstCondition && secondCondition === true) {
+  alert(`${aNumber} is a palindrome`)
+} else {alert(`${aNumber} is not a palindrome`)}
 
 
 // Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
@@ -143,64 +143,64 @@
 // від 300 до 500 - 5%;
 // від 500 і вище - 7%.
 
-// let purchaseSum = Number(prompt('Enter your purchase sum: (like 56.75)'))
+let purchaseSum = Number(prompt('Enter your purchase sum: (like 56.75)'))
 
-// let discount = purchaseSum / 100 * 3
-// let oldPrice = (purchaseSum + discount).toFixed(2)
+let discount = purchaseSum / 100 * 3
+let oldPrice = (purchaseSum + discount).toFixed(2)
 
-// let ddiscount = purchaseSum / 100 * 5
-// let ooldPrice = (purchaseSum + ddiscount).toFixed(2)
+let ddiscount = purchaseSum / 100 * 5
+let ooldPrice = (purchaseSum + ddiscount).toFixed(2)
 
-// let dddiscount = purchaseSum / 100 * 7
-// let oooldPrice = (purchaseSum + dddiscount).toFixed(2)
+let dddiscount = purchaseSum / 100 * 7
+let oooldPrice = (purchaseSum + dddiscount).toFixed(2)
 
-// if (200 <= purchaseSum <= 299) {
-//   alert(`Your purchase sum without the discount is ${oldPrice}$`)
-// } else if (300 <= purchaseSum <= 499) {
-//   alert(`Your purchase sum without the discount is ${ooldPrice}$`)
-// } else if (500 <= purchaseSum) {
-//   alert(`Your purchase sum without the discount is ${oooldPrice}$`)
-// } else { alert('You do not have a discount') }
+if (200 <= purchaseSum <= 299) {
+  alert(`Your purchase sum without the discount is ${oldPrice}$`)
+} else if (300 <= purchaseSum <= 499) {
+  alert(`Your purchase sum without the discount is ${ooldPrice}$`)
+} else if (500 <= purchaseSum) {
+  alert(`Your purchase sum without the discount is ${oooldPrice}$`)
+} else { alert('You do not have a discount') }
 
 
 // Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних. Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
 
-// let aNumber
-// let positive = 0
-// let negative = 0
-// let zero = 0
+let theNumber
+let positive = 0
+let negative = 0
+let zero = 0
 
-// let even = 0
-// let odd = 0
+let even = 0
+let odd = 0
 
 
-// for (let i = 0; i < 10; i++) {
-//   aNumber = Number(prompt('Enter an integer: '))
-//   if (aNumber > 0) {
-//     positive += 1
-//   } else if (aNumber < 0) {
-//     negative += 1
-//   } else { zero += 1 }
+for (let i = 0; i < 10; i++) {
+  theNumber = Number(prompt('Enter an integer: '))
+  if (theNumber > 0) {
+    positive += 1
+  } else if (theNumber < 0) {
+    negative += 1
+  } else { zero += 1 }
 
-//   if (aNumber % 2 === 0) {
-//     even += 1
-//   } else {odd += 1}
-// }
+  if (theNumber % 2 === 0) {
+    even += 1
+  } else {odd += 1}
+}
 
-// alert(`You've entered ${positive} positive numbers, ${negative} negative numbers and ${zero} zeros! Also you've entered ${even} even numbers and ${odd} odd numbers. (Zero is an odd number *_* )`)
+alert(`You've entered ${positive} positive numbers, ${negative} negative numbers and ${zero} zeros! Also you've entered ${even} even numbers and ${odd} odd numbers. (Zero is an odd number *_* )`)
 
 // Зацикли відображення днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
 
-// const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
-// let i = 0
+let i = 0
 
-// while (!true) {
-//   const weekDay = weekDays[i++]
-//   if (i === 7) i = 0
-//   const shouldContinue = confirm(`${weekDay}! Wanna see next one?`)
-//   if (!shouldContinue) break
-// }
+while (true) {
+  const weekDay = weekDays[i++]
+  if (i === 7) i = 0
+  const shouldContinue = confirm(`${weekDay}! Wanna see next one?`)
+  if (!shouldContinue) break
+}
 
-// while (confirm(`${weekDays[i = (i + 1) % 7]}! Wanna see next one?`)); 
+
 
